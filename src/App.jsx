@@ -1,11 +1,11 @@
-import Navebar from './components/Navebar'
-import HomeBody from './components/HomeBody'
-import AboutMepage from './components/AboutMepage';
+import Navebar from './components/Navebar.jsx'
+import HomeBody from './components/HomeBody.jsx'
+import AboutMepage from './components/AboutMepage.jsx';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Projects from './components/Projects';
-import Activitypage from './components/Activitypage';
-import Intropage from './components/Intropage';
-import SelfQuespage from './components/SelfQuespage';
+import Projects from './components/Projects.jsx';
+import Activitypage from './components/Activitypage.jsx';
+import Intropage from './components/Intropage.jsx';
+import SelfQuespage from './components/SelfQuespage.jsx';
 
 function Homepage(){
   return (
