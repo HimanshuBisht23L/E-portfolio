@@ -4,7 +4,7 @@ import AboutMepage from './components/AboutMepage';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Projects from './components/Projects';
 import Activitypage from './components/Activitypage';
-import Intropage from './components/intropage';
+import Intropage from './components/Intropage';
 import SelfQuespage from './components/SelfQuespage';
 
 function Homepage(){
