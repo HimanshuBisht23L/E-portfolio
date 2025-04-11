@@ -1,0 +1,135 @@
+.outer{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    gap: 2rem;
+}
+
+.outer h1{
+    background: linear-gradient(90deg, #1eff35, #09efdc);
+    background-clip: text;
+    color: transparent;
+    text-wrap: nowrap;
+}
+
+.inner{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+.ques-container{
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-height: 60vh;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    border-radius: 1rem;
+}
+
+.questions{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.questions h3{
+    color: white;
+    text-shadow: 1px 1px 10px #09efdc94;
+}
+
+.questions p{
+    color: #45ffabd9;
+    /* text-shadow: 1px 1px 10px #09efdc80; */
+}
+
+
+
+
+h4{
+    width: auto;
+    text-wrap: nowrap;
+    color: #facc15;
+}
+
+.content-div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.div-subcontent{
+    display: flex;
+}
+
+
+
+.ul-data li{
+    list-style: square;
+    line-height: 2rem;
+    color: #45ffabd9;
+    margin-left: 1rem;
+}
+
+
+
+
+
+/* For Chrome, Edge, and Safari */
+.ques-container::-webkit-scrollbar {
+    width: 8px; /* Adjust scrollbar width */
+}
+
+.ques-container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.308); /* Scrollbar color */
+    border-radius: 4px; /* Rounded edges */
+}
+
+/* For Firefox */
+.ques-container {
+    scrollbar-color:#dadada26 #d2c9c900;
+    scrollbar-width: thin;
+}
+
+
+
+@media (max-width:720px) {
+    .outer, .inner{
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width:480px) {
+    .outer > h1{
+        font-size: 2.5rem;
+    }
+
+    h3{
+        font-size: 1rem;
+    }
+
+    p, li, h4{
+        font-size: .8rem;
+    }
+}
+
+@media (max-width:320px) {
+    .outer > h1{
+        font-size: 2rem;
+    }
+
+    h3{
+        font-size: .8rem;
+    }
+
+    p, li, h4{
+        font-size: .6rem;
+    }
+}

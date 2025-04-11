@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.actv-container{
+    width: 75%;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-container{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.act-heading{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: auto;
+    position: sticky;
+    top: 0px;
+    >h1{
+        color: #00ff88;
+        font-size: 3rem;
+    }
+}
+
+.work{
+    position: relative;
+    border: 1px solid green;
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 1rem;
+    transition: box-shadow .2s ease-in-out,transform .2s ease-in-out;
+}
+
+.work:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 10px #a8a8a8f7;
+}
+
+
+.work-data{
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    padding: 1rem;
+}
+
+
+.sub-head{
+    color: #00ff88;
+    margin: 1rem;
+}
+
+.work-bio{
+    width: 100%;
+    margin: 1rem;
+}
+
+.date{
+    margin: 1rem;
+}
+
+
+@media (max-width: 768px) {
+    .act-heading > h1{
+        font-size: 2.5rem;
+    }
+
+    .actv-container{
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+@media (max-width: 480px) {
+    .act-heading > h1{
+        font-size: 2rem;
+    }
+    .work h2{
+        font-size: 1.3rem;
+    }
+
+    .work-bio, .date{
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .act-heading > h1{
+        font-size: 1.5rem;
+    }
+    .work h2{
+        font-size: .9rem;
+    }
+
+    .work-bio, .date{
+        font-size: .6rem;
+    }
+}
+
+
+
+
+
+/* For Chrome, Edge, and Safari */
+.work-data::-webkit-scrollbar {
+    width: 8px; /* Adjust scrollbar width */
+}
+
+.work-data::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.308); /* Scrollbar color */
+    border-radius: 4px; /* Rounded edges */
+}
+
+/* For Firefox */
+.work-data {
+    scrollbar-color:#dadada26 #d2c9c900;
+    scrollbar-width: thin;
+}

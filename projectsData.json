@@ -1,0 +1,31 @@
+[
+    {
+        "img" : "/images/TicToe.png",
+        "Title" : "Tic Tac Toe "
+    },
+    
+    {
+        "img" : "/images/Weather.png",
+        "Title" : "Weather App "
+    },
+
+    {
+        "img" : "/images/AgroAi.png",
+        "Title" : "Agro Ai (Major Project)"
+    },
+
+    {
+        "img" : "/images/chatbot.png",
+        "Title" : "Mini ChatBot "
+    },
+    
+    {
+        "img" : "/images/S2T.png",
+        "Title" : "Speech 2 Text "
+    },
+    
+    {
+        "img" : "/images/Todo.png",
+        "Title" : "Todo App "
+    }
+]
