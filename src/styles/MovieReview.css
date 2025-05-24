@@ -1,0 +1,53 @@
+.movie-review-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+}
+
+.movie-review-container h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.movie-review-container h3 {
+  margin-top: 25px;
+  color: #2c3e50;
+  font-size: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.movie-review-container p {
+  font-size: 16px;
+  color: #444;
+}
+
+.movie-review-container ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.movie-review-container li {
+  margin-bottom: 8px;
+}
+
+.movie-review-container blockquote {
+  font-style: italic;
+  color: #555;
+  margin: 15px 0;
+  padding-left: 15px;
+  border-left: 4px solid #888;
+  background-color: #f1f1f1;
+}
+
+
+ul{
+    color: black;
+}

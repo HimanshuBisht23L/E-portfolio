@@ -6,6 +6,15 @@ export default function SelfQuespage() {
     return (
         <div className='outer'>
             <h1>Self Questions</h1>
+            <a
+                href="/16_SelfQuestions.pdf"
+                download
+                className="download-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                📄 Download Handwritten Questions (PDF)
+            </a>
             <div className="inner">
                 <div className="ques-container">
 

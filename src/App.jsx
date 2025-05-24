@@ -6,57 +6,87 @@ import Projects from './components/Projects.jsx';
 import Activitypage from './components/Activitypage.jsx';
 import Intropage from './components/Intropage.jsx';
 import SelfQuespage from './components/SelfQuespage.jsx';
+import MovieReview from './components/Movie_Review.jsx'
+import SelfLearning from './components/SelfLearning.jsx';
+import CoverLetter from './components/CoverLetter.jsx';
 
-function Homepage(){
+function Homepage() {
   return (
     <>
-      <Navebar/>
-      <HomeBody/>
+      <Navebar />
+      <HomeBody />
     </>
   )
 }
 
-function AboutMePage(){
+function AboutMePage() {
   return (
     <>
-      <Navebar/>
-      <AboutMepage/>
+      <Navebar />
+      <AboutMepage />
     </>
   )
 }
 
-function ProjectPage(){
+function ProjectPage() {
   return (
     <>
-      <Navebar/>
-      <Projects/>
+      <Navebar />
+      <Projects />
     </>
   )
 }
 
-function ActivitiesPage(){
+function ActivitiesPage() {
   return (
     <>
-      <Navebar/>
-      <Activitypage/>
+      <Navebar />
+      <Activitypage />
     </>
   )
 }
 
-function Activity1page(){
+function Activity1page() {
   return (
     <>
-      <Navebar/>
-      <Intropage/>
+      <Navebar />
+      <Intropage />
     </>
   )
 }
 
-function Activity2page(){
+function Activity2page() {
   return (
     <>
-      <Navebar/>
-      <SelfQuespage/>
+      <Navebar />
+      <SelfQuespage />
+    </>
+  )
+}
+
+function Activity3page() {
+  return (
+    <>
+      <Navebar />
+      <MovieReview />
+    </>
+  )
+}
+
+function Activity4page() {
+  return (
+    <>
+      <Navebar />
+      <CoverLetter />
+    </>
+  )
+}
+
+function Activity5page() {
+  return (
+    <>
+      <Navebar />
+      <SelfLearning />
     </>
   )
 }
@@ -65,17 +95,20 @@ function Activity2page(){
 function App() {
   return (
     <>
-    <Router>
-      <Routes>    
-        <Route path="/" element= {<Homepage/>}/>
-        <Route path="/AboutMe" element= {<AboutMePage/>}/>
-        <Route path="/Projects" element= {<ProjectPage/>}/>
-        <Route path="/Activities" element= {<ActivitiesPage/>}/>
-        
-        <Route path="/Week-1/intro" element= {<Activity1page/>}/>
-        <Route path="/Week-2/QuesAns" element= {<Activity2page/>}/>
-      </Routes>
-    </Router>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/AboutMe" element={<AboutMePage />} />
+          <Route path="/Projects" element={<ProjectPage />} />
+          <Route path="/Activities" element={<ActivitiesPage />} />
+
+          <Route path="/Week-1/intro" element={<Activity1page />} />
+          <Route path="/Week-2/QuesAns" element={<Activity2page />} />
+          <Route path="/Week-3/movie_review" element={<Activity3page />} />
+          <Route path="/Week-4/CoverLetter" element={<Activity4page />} />
+          <Route path="/Week-5/25_Learning" element={<Activity5page />} />
+        </Routes>
+      </Router>
     </>
   )
 }
