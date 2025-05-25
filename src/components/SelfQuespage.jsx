@@ -1,4 +1,4 @@
-import React from 'react'
+
 import '../styles/selfques.css'
 import selfQues from "../../SelfQuestions.json"
 

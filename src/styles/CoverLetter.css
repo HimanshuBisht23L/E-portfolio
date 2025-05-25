@@ -1,0 +1,45 @@
+.cover-letter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(145deg, #0f2027, #203a43, #2c5364);
+  border-radius: 1rem;
+  box-shadow: 0 4px 30px rgba(0, 255, 191, 0.1);
+  color: #ffffff;
+  max-width: 700px;
+  margin: 2rem auto;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.cover-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #3fe493;
+}
+
+.cover-description {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #cce7e8;
+  max-width: 500px;
+}
+
+.download-btn {
+  background: linear-gradient(90deg, #3fe493 0%, #00ffd0 100%);
+  padding: 0.75rem 1.5rem;
+  color: #1b1b1b;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 15px rgba(63, 228, 147, 0.4);
+  font-size: 1rem;
+}
+
+.download-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+  background: linear-gradient(90deg, #2cd87a 0%, #00e6b0 100%);
+  box-shadow: 0 6px 20px rgba(44, 216, 122, 0.5);
+}

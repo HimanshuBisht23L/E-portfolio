@@ -1,33 +1,21 @@
-import coverLetterData from '../../CoverLetter.json';
-import '../styles/SelfLearning_CoverLetter.css';
+import '../styles/CoverLetter.css';
 
 export default function CoverLetter() {
   return (
-    <div className="learning-main">
-      <div className="learning-container">
-        <h1>{coverLetterData.title}</h1>
-
-        {coverLetterData.paragraphs.map((para, index) => (
-          <p key={index}>{para}</p>
-        ))}
-
-        <h3>🛑 Some Important Points We Discussed:</h3>
-        <ul className="mistakes-list">
-          {coverLetterData.importantPoints.map((point, index) => (
-            <li key={index}>{point}</li>
-          ))}
-        </ul>
-
-        <h3>⚠️ Detailed Common Errors:</h3>
-        <ul className="mistakes-list">
-          {coverLetterData.commonErrors.map((error, index) => (
-            <li key={index}>{error}</li>
-          ))}
-        </ul>
-
-        <p>{coverLetterData.conclusion}</p>
-        <p className="final-thought">{coverLetterData.finalThought}</p>
-      </div>
+    <div className="cover-letter">
+      <h1 className="cover-title">📮 My Cover Letter</h1>
+      <p className="cover-description">
+        Click below to download the professionally written cover letter that summarizes key learnings and reflections.
+      </p>
+      <a
+        href="/CoverLetter.pdf"
+        download
+        className="download-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        📄 Download PDF
+      </a>
     </div>
   );
 }
